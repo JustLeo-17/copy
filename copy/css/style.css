@@ -1,11 +1,15 @@
 *,
-::after,
-::before {
+*::after,
+*::before {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+body {
+    font-family: 'Alice','Amatic SC', sans-serif;
+    font-weight: 400;
+}
 
 .container {
     max-width: 1240px;
@@ -14,10 +18,24 @@
         
 }
 
+/***** Header *****/
+.header {
+    background: #F2EDE0;
+}
+.logo {
+    max-width: 50px;
+    max-height: 100px;
+    
+}
+.logo__img {
+    display: flex;
+}
 .header__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 5px;
+    height: 60px;
     
 }
 
@@ -27,5 +45,163 @@
 }
 
 .menu__list__item + .menu__list__item {
-   margin-left: 20px;
+   margin-left: 90px;
+}
+
+.menu__list__item:hover a{
+    color: rgb(197, 142, 40);
+    text-shadow: 0 2px 2px black;
+   
+}
+
+.menu__list_link  {
+    color: #4F4242;
+    font-size: 28px;
+    line-height: 32px;
+    text-decoration: none;
+    font-weight: 700;
+    font: inherit;
+
+}
+
+
+.user-nav {
+    margin-left: 50px;
+    margin-right: 25px;
+}
+
+.basket + .insta {
+    margin-left: 20px;
+}
+
+/*** main ***/
+
+.top {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: relative;
+    background: url(/images/background.jpg) no-repeat center;
+    background-size: cover;
+    height: 95vh;
+}
+.bg-top {
+    background: linear-gradient(to right,transparent 30%, rgb(255, 255, 255) );
+    height: 100%;
+}
+
+.top__inner {
+    position: absolute;
+    top: 23.3vh;
+    right: 100px;
+    width: 58.78vh;
+    z-index: 3;
+    align-items: center;
+}
+
+.top_title {
+    font-family: Amatic SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8.9vh;
+    line-height: 11.1vh;
+    color: #4F4242;
+    margin-bottom: 30px;
+}
+.top_text {
+    color: #9F5C54;
+    font-size: 5.1vh;
+    line-height: 6.3vh;
+    font-family: 'Caveat', serif;
+    margin-bottom: 100px;
+
+}
+
+.order_btn {
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    padding: 5px 45px;
+    background: #DD978F;
+    border-radius: 25px;
+    line-height: 26px;
+    font-size: 3vh;
+    margin-left: 15vh;
+    
+}
+
+.top_phones {
+    position: absolute;
+    left: 103px;
+    bottom: 2.22vh;
+    padding: 5px;
+    z-index: 3;
+    display: flex;
+}
+
+.phone_number_link {
+    display: block;
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vh;
+    line-height: 2.56vh
+}
+.top__telegram + .top__viber {
+    margin-left: 15px;
+}
+
+/*** hello section ***/
+
+.hello {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: relative;
+    background: white ;
+    height: 95vh;
+}
+
+.hello__inner {
+    position: relative;
+}
+.hello__inner__image {
+    position: absolute;
+    top: 180px;
+    left: -75px;
+    z-index: 8;
+}
+
+.hello_title {
+    font-family: 'Caveat', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 76px;
+    color: #4F4242;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.hello_title::before {
+    content: '';
+    display: block;
+    background: url(/images/hello-cake-icon.svg) no-repeat 95% center;
+    position: absolute;
+    top: 150px;
+    left: -24vh;
+    z-index: 7;
+    width: 100px;
+    height: 135px;
+}
+.hello_title::after {
+    content: '';
+    display: block;
+    background: url(/images/hello-cake-icon.svg) no-repeat 95% center;
+    position: absolute;
+    top: 260px;
+    left: 25vh;
+    z-index: 7;
+    width: 100px;
+    height: 135px;
+    transform: rotate(45deg);
 }
