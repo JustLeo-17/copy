@@ -160,6 +160,7 @@ body {
     position: relative;
     background: white ;
     height: 95vh;
+    overflow: hidden;
 }
 
 .hello__inner {
@@ -204,4 +205,229 @@ body {
     width: 100px;
     height: 135px;
     transform: rotate(45deg);
+}
+
+.hello_inner_description {
+    max-width: 600px;
+    width: 100%;
+    padding: 5px;
+    margin-left: 70vh;
+}
+
+.brand_logo {
+    margin-bottom: 75px;
+    margin-top: 50px;
+    margin-left: 300px;
+}
+.logo_text {
+    font-family: 'Caveat', sans-serif;
+    font-weight: normal;
+     font-size: 5vh;
+    line-height: 2.56vh;
+    display: inline-block;
+    color:#DD978F;
+
+}
+
+.description_text {
+    font-family: 'Caveat', sans-serif;
+    font-weight: normal;
+    font-size: 3vh;
+    margin-bottom: 35px;
+    line-height: 2.3vh;
+}
+
+.hello__text::before {
+    content: '';
+    display: block;
+    background: url(/images/hello-cake-icon.svg) no-repeat 95% center;
+    position: absolute;
+    top: -150px;
+    left: 135vh;
+    z-index: 7;
+    width: 100px;
+    height: 135px;
+    transform: rotate(-115deg);
+}
+
+.hello__text::after {
+    content: '';
+    display: block;
+    background: url(/images/hello-cake-icon.svg) no-repeat 95% center;
+    position: absolute;
+    top: 600px;
+    right: -35vh;
+    z-index: 7;
+    width: 100px;
+    height: 135px;
+    transform: scale(2);
+}
+.hello::after {
+    content:"";
+    display: block;
+    position: absolute;
+    background: lightcoral;
+    height: 5px;
+    width: 100%;
+    bottom: 0vh;
+}
+
+/*** Benefits section ***/
+.benefits {
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    border: 0;
+    position: relative;
+    background: url(/images/benefits-image.jpg) ;
+    height: 70vh;
+
+}
+.benefits__wrapper{
+  margin: 0 auto;
+}
+.benefits_title {
+    font-family: Amatic SC;
+    font-size: 50px;
+    line-height: 100px;
+    text-align: center;
+    margin-bottom: 100px;
+    
+}
+
+.benefits_items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-row-gap: 102px;
+    justify-content: flex-end;
+    padding: 2px;
+
+}
+.benefits_item_holder-top {
+    grid-column: span 2;
+    margin: 0 auto;
+    
+}
+.benefits_item_holder-bot {
+    grid-column: span 3;
+    margin: 0 auto;
+   
+}
+
+.item_title {
+    width: 350px;
+    height: 44px;
+    padding-left: 52px;
+    padding-top: 8px;
+    margin-bottom: 20px;
+    font-family: Caveat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 44px;
+    color: #7D0A41;
+}
+
+.item_text {
+    font-family: Caveat;
+    width: 300px;
+    height: 35px;
+    font-size: 30px;
+    line-height: 21px;
+    color: #f86d6d;
+}
+.item_cost, .item_work, .item_original, .item_natural, .item_delivery {
+    position: relative;
+}
+.item_cost::before {
+    content:'';
+    background:url(/images/benefits__pig-icon.svg) no-repeat center;
+    display: block;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    bottom: 50px;
+}
+
+.item_delivery::before {
+    content:'';
+    background:url(/images/benefits__box-icon.svg) no-repeat center;
+    display: block;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    bottom: 50px;
+}
+.item_natural::before {
+    content:'';
+    background:url(/images/benefits__leafs-icon.svg) no-repeat center;
+    display: block;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    bottom: 50px;
+}
+
+.item_original::before {
+    content:'';
+    background:url(/images/benefits__cake-icon.svg) no-repeat center;
+    display: block;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    bottom: 50px;
+}
+.item_work::before {
+    content:'';
+    background:url(/images/benefits__hand-icon.svg) no-repeat center;
+    display: block;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    bottom: 50px;
+}
+
+/*** Footer ***/
+.footer {
+    margin: 0;
+    padding: 0;
+    border:0;
+    position: relative;
+    background: url(/images/footer-image.jpg) no-repeat;
+    background-size:cover;
+    
+}
+.footer_wrap {
+    display: flex;
+    height: 200px;
+    align-items:center;
+}
+
+.footer_logo {
+    width: 20%;
+    margin-left: 100px;
+     
+}
+
+.footer_contacts {
+    width: 70%;
+    margin: auto;
+
+}
+.footer_logo_text {
+    font-family: 'Caveat', sans-serif;
+    font-weight: normal;
+     font-size: 5vh;
+    line-height: 2.56vh;
+    display: inline-block;
+    color:#333;
+
+}
+
+.contacts {
+    color: ivory;
+    font-family: 'Alice';
+    font-size: 30px;
+    margin-left: 25px;
+    margin-bottom: 20px;
 }
